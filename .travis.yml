@@ -8,4 +8,4 @@ before_install:
   - docker build -t todor-ops/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true todor-ops/docker-react npm run test
+  - docker run -e CI=true todor-ops/docker-react npm run test -- --coverage
