@@ -1,5 +1,7 @@
 
 language: generic
+os: linux
+dist: xenial
 
 services:
   - docker
